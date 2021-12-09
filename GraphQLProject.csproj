@@ -1,0 +1,28 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Type\Mutations\**" />
+    <Compile Remove="Type\Query\**" />
+    <Compile Remove="Type\Schema\**" />
+    <Content Remove="Type\Mutations\**" />
+    <Content Remove="Type\Query\**" />
+    <Content Remove="Type\Schema\**" />
+    <EmbeddedResource Remove="Type\Mutations\**" />
+    <EmbeddedResource Remove="Type\Query\**" />
+    <EmbeddedResource Remove="Type\Schema\**" />
+    <None Remove="Type\Mutations\**" />
+    <None Remove="Type\Query\**" />
+    <None Remove="Type\Schema\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="graphiql" Version="2.0.0" />
+    <PackageReference Include="GraphQL.Server.Transports.AspNetCore.SystemTextJson" Version="5.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
